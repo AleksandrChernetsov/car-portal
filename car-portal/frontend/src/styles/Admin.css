@@ -1,0 +1,137 @@
+/* Стили для админ-панели */
+
+.admin-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.admin-title {
+  font-weight: bold;
+}
+
+.stats-grid {
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.stat-value {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.stat-actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  margin-right: 16px;
+  background-color: #e3f2fd;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-role {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  margin-left: 8px;
+}
+
+.role-admin {
+  background-color: #ffebee;
+  color: #f44336;
+}
+
+.role-moderator {
+  background-color: #fff8e1;
+  color: #ff9800;
+}
+
+.role-user {
+  background-color: #e8f5e8;
+  color: #4caf50;
+}
+
+.car-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-image {
+  position: relative;
+  height: 180px;
+}
+
+.car-status {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.status-available {
+  background-color: #4caf50;
+  color: white;
+}
+
+.status-sold {
+  background-color: #f44336;
+  color: white;
+}
+
+.car-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
